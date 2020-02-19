@@ -1,6 +1,6 @@
 // TODO: Render the `App` component to the DOM
+//took out props
 import App from './components/App.js';
-import data from '/src/data/exampleVideoData.js';
 
-ReactDOM.render(<App videoData={data} />, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('app'));
 
