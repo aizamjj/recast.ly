@@ -1,4 +1,3 @@
-import exampleVideoData from '/src/data/exampleVideoData.js';
 import VideoListEntry from './components/VideoListEntry.js';
 
 

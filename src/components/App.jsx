@@ -1,5 +1,5 @@
-import VideoList from '/VideoList.js';
-var App = () => (
+// import VideoList from '/VideoList.js';
+var App = (props) => (
   <div>
     <nav className="navbar">
       <div className="col-md-6 offset-md-3">
@@ -11,7 +11,7 @@ var App = () => (
         <div><h5><em>videoPlayer</em> view goes here</h5></div>
       </div>
       <div className="col-md-5">
-        <div><h5><VideoList /></h5></div>
+        <div><h5>videoList view goes here</h5></div>
       </div>
     </div>
   </div>
