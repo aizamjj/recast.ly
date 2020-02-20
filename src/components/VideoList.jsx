@@ -1,31 +1,18 @@
 import VideoListEntry from './VideoListEntry.js';
 
-var VideoList = (props) => (
+var VideoList = ({videos, click}) => (
   <div className="video-list">
-    <div>{props.videos.map(video =>
-      <VideoListEntry video={video} key={video.etag}/>)}
-    </div>
+
+    {videos.map(video =>
+      <VideoListEntry
+        video={video}
+        key={video.id.videoId}
+        click={click}/>)}
+
 
   </div>
 );
 
-// class VideoList extends React.Component {
-//   constructor(props) {
-//     super(props);
-
-//   }
-
-//   render() {
-//     return (
-//       <div className="video-list">
-//         <div>
-//           <h5>{props.video.map(video => <VideoListEntry video={video}/>)}
-//           </h5>
-//         </div>
-//       </div>
-//     );
-//   }
-// }
 
 
 // PropTypes tell other developers what `props` a component expects
